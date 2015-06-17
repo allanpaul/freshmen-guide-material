@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Freshmen Guide</string>
+    <string name="drawer_open">Menu opened</string>
+    <string name="drawer_close">Menu closed</string>
+    <string name="action_settings">Settings</string>
+    <string name="home">Home</string>
+    <string name="book">Student Handbook</string>
+    <string name="map">Campus Map</string>
+    <string name="courses">Courses Offered</string>
+    <string name="org">Organizational Charts</string>
+    <string name="student">Student Organizations</string>
+    <string name="hymn">Hymn</string>
+    <string name="contact">Contact Us</string>
+    <string name="action_search">Search</string>
+    <string name="action_filter">Filter</string>
+    <string name="title_activity_preference">PreferenceActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

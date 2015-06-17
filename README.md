@@ -1,2 +1,2 @@
-# freshmen-guide-lollipop
-Android 5.0 version of UCU Freshmen Guide
+# template_example
+An example of a simple material application using Android Studio Material Template
