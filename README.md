@@ -1,2 +1,2 @@
-# template_example
-An example of a simple material application using Android Studio Material Template
+# UCU Freshmen Guide AMterial Design
+An upgrade to  the application Freshmen Guide
