@@ -16,7 +16,7 @@ public  class StudOrgFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.handbookfragment, container, false);
+        View rootView = inflater.inflate(R.layout.studorg, container, false);
 
 
         return rootView;

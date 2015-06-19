@@ -15,5 +15,8 @@
     <string name="action_filter">Filter</string>
     <string name="title_activity_preference">PreferenceActivity</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="string_title_studorg">The Campus Student Organizations (CSO) provides programs and activities designed for the enhancement of leadership skills and social responsibility, which include Student Organizations and Activities, Student Council/Government, Leadership Training Programs, Students Publications, Sports Development Programs, Social and Community Involvement and multi-faith services.</string>
+
+    <string name="btnlabel_procedure">PROCEDURE AND STANDARDS</string>
+    <string name="btnlabel_acad">ACADEMIC ORGANIZATION</string>
 </resources>
