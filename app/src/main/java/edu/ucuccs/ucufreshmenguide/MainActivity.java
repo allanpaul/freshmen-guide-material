@@ -23,8 +23,10 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mToolbar = (Toolbar) findViewById(R.id.toolbar_actionbar);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(mToolbar);
+
+
 
         mNavigationDrawerFragment = (NavigationDrawerFragment)
                 getFragmentManager().findFragmentById(R.id.fragment_drawer);
@@ -38,28 +40,28 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         Fragment fHymn = new UCUHymnFragment();
-        Fragment handbook = new HandbookFragment();
+        Fragment contactUs = new ContactUsFragment();
         Fragment studOrg = new StudOrgFragment();
         FragmentTransaction t = getFragmentManager().beginTransaction();
         switch (position) {
             case 0: //search //todo
                 break;
-            case 1: //stats
-                t.replace(R.id.container, handbook);
-                t.addToBackStack(null);
-                t.commit();
-                break;
             case 2: //my account //todo
                 break;
             case 3: //settings //todo
                 break;
-            case 5: //studorg
+            case 5: //stud_org
                 t.replace(R.id.container, studOrg);
                 t.addToBackStack(null);
                 t.commit();
                 break;
             case 6: //ucuhymn
                 t.replace(R.id.container, fHymn);
+                t.addToBackStack(null);
+                t.commit();
+                break;
+            case 7: //stats
+                t.replace(R.id.container, contactUs);
                 t.addToBackStack(null);
                 t.commit();
                 break;

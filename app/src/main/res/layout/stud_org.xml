@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_margin="10dp"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="@string/string_title_studorg"
             android:id="@+id/textView2" />
 
@@ -44,6 +44,7 @@
 
     <Button
         android:textColor="#FFF"
+        android:foreground="?android:attr/selectableItemBackground"
         android:layout_margin="10dp"
         android:background="?attr/colorPrimary"
         android:layout_width="fill_parent"
@@ -58,8 +59,8 @@
         android:background="?attr/colorPrimary"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/btnlabel_acad"
-        android:id="@+id/button"
+        android:text="@string/btnlabel_list_org"
+        android:id="@+id/btnStudOrg"
         android:layout_gravity="center_horizontal" />
 
 </LinearLayout>
