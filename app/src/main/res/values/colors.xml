@@ -11,7 +11,7 @@
     <color name="myPrimaryColor">#085E55</color>
     <color name="myPrimaryDarkColor">#064D45</color>
     <color name="myAccentColor">#eeff41</color>
-    <color name="myDrawerBackground">#000</color>
+    <color name="myDrawerBackground">#FFF</color>
     <color name="myWindowBackground">#FFFFFF</color>
     <color name="myTextPrimaryColor">#212121</color>
     <color name="myNavigationColor">#000000</color>
