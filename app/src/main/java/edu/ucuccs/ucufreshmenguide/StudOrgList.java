@@ -5,7 +5,6 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.widget.Toolbar;
 
-//Sample Pull Tutorial in Git
 public class StudOrgList extends BaseActivity {
     Toolbar mToolbar;
     @Override

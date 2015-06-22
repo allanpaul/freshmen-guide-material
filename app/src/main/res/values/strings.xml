@@ -19,4 +19,7 @@
 
     <string name="btnlabel_procedure">PROCEDURE AND STANDARDS</string>
     <string name="btnlabel_list_org">LIST OF ORGANIZATIONS</string>
+    <string name="title_activity_fragment_campus_map">FragmentCampusMap</string>
+
+    <string name="hello_world">Hello world!</string>
 </resources>
