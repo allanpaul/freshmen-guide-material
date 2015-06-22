@@ -40,12 +40,21 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         Fragment fHymn = new FragmentUCUHymn();
+<<<<<<< HEAD
         Fragment fMap = new FragmentCampusMap();
+=======
+        Fragment handbook= new FragmentHandbook();
+>>>>>>> f3f5b9e00c21f6975d610dd60812b8c656111ca6
         Fragment contactUs = new FragmentContactUs();
         Fragment studOrg = new FragmentStudentOrg();
         FragmentTransaction t = getFragmentManager().beginTransaction();
         switch (position) {
             case 0: //search //todo
+                break;
+            case 1:
+                t.replace(R.id.container, handbook);
+                t.addToBackStack(null);
+                t.commit();
                 break;
             case 2: //my account //todo
                 t.replace(R.id.container, fMap);

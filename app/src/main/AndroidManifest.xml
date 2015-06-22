@@ -55,6 +55,7 @@
                 android:value="edu.ucuccs.ucufreshmenguide.MainActivity" />
         </activity>
         <activity
+<<<<<<< HEAD
             android:name=".FragmentCampusMap"
             android:label="@string/title_activity_fragment_campus_map" >
         </activity>
@@ -65,6 +66,12 @@
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
+=======
+            android:name=".PolicyViewing"
+            android:label="Handbook" >
+        </activity>
+
+>>>>>>> f3f5b9e00c21f6975d610dd60812b8c656111ca6
     </application>
 
 </manifest>
