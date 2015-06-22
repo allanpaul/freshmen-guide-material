@@ -16,6 +16,6 @@ public class PreferenceActivity extends ActionBarActivity {
         getSupportActionBar().setHomeButtonEnabled(true);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-       getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
+       getFragmentManager().beginTransaction().replace(android.R.id.content, new FragmentSettings()).commit();
     }
 }
