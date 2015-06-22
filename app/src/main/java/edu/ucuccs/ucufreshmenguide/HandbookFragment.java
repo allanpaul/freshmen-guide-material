@@ -13,7 +13,7 @@ public class HandbookFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.handbookfragment, container, false);
+        return inflater.inflate(R.layout.stud_org, container, false);
     }
 
 /*    @Override
