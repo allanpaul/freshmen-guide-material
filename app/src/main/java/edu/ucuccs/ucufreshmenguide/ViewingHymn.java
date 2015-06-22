@@ -6,7 +6,7 @@ import android.widget.MediaController;
 import android.widget.VideoView;
 
 public class ViewingHymn extends Activity {
-
+	//This is a sample comment for Git Tutorial
 	VideoView video;
 
 	@Override
