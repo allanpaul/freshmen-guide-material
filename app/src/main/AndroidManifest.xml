@@ -35,6 +35,11 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.ucuccs.ucufreshmenguide.MainActivity" />
         </activity>
+        <activity
+            android:name=".PolicyViewing"
+            android:label="Handbook" >
+        </activity>
+
     </application>
 
 </manifest>
