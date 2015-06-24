@@ -1,22 +1,33 @@
 package edu.ucuccs.ucufreshmenguide;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.Toolbar;
 import android.text.Html;
+import android.view.MenuItem;
 import android.widget.TextView;
 
 public class PolicyViewing extends ActionBarActivity {
 	TextView txtPolicy;
+    Toolbar mToolbar;
+    private NavigationDrawerCallbacks mNavigationDrawerCallbacks;
 
+    public NavigationDrawerCallbacks getNavigationDrawerCallbacks() {
+        return mNavigationDrawerCallbacks;
+    }
+
+    public void setNavigationDrawerCallbacks(NavigationDrawerCallbacks navigationDrawerCallbacks) {
+        mNavigationDrawerCallbacks = navigationDrawerCallbacks;
+    }
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.policy_viewing);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(mToolbar);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
 
 		int index;
 		Intent intent = getIntent();
@@ -225,5 +236,17 @@ public class PolicyViewing extends ActionBarActivity {
 		}
 
 	}
+    @Override
+     public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == android.R.id.home) {
+            onBackPressed();
+            if (mNavigationDrawerCallbacks != null)
+                mNavigationDrawerCallbacks.onNavigationDrawerItemSelected(1);
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
 
 }

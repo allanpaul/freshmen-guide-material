@@ -57,6 +57,9 @@
         <activity
             android:name=".PolicyViewing"
             android:label="Handbook" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="edu.ucuccs.ucufreshmenguide.MainActivity" />
         </activity>
 
         <meta-data

@@ -32,10 +32,8 @@ public class FragmentHandbook extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_handbook,
                 container, false);
 
-        // get the listview
         expListView = (ExpandableListView) rootView.findViewById(R.id.listView);
 
-        // preparing list data
         prepareListData();
 
         listAdapter = new ExpandableListAdapter(getActivity(), listDataHeader,
@@ -44,7 +42,6 @@ public class FragmentHandbook extends Fragment {
         // setting list adapter
         expListView.setAdapter(listAdapter);
 
-        // Listview Group click listener
         expListView.setOnGroupClickListener(new OnGroupClickListener() {
 
             @Override
@@ -56,7 +53,6 @@ public class FragmentHandbook extends Fragment {
 
         });
 
-        // Listview Group expanded listener
         expListView.setOnGroupExpandListener(new OnGroupExpandListener() {
             @Override
             public void onGroupExpand(int groupPosition) {
@@ -64,7 +60,6 @@ public class FragmentHandbook extends Fragment {
             }
         });
 
-        // Listview Group collasped listener
         expListView.setOnGroupCollapseListener(new OnGroupCollapseListener() {
 
             @Override
@@ -73,7 +68,6 @@ public class FragmentHandbook extends Fragment {
             }
         });
 
-        // Listview on child click listener
         expListView.setOnChildClickListener(new OnChildClickListener() {
 
             @Override
@@ -491,37 +485,30 @@ public class FragmentHandbook extends Fragment {
             }
         });
 
-        // Automatically Expand ListView in the part of Graduate and Post
-        // Graduate Courses
         expListView.expandGroup(0);
 
         return rootView;
     }
-    // Preparing the list data
     private void prepareListData() {
         // TODO Auto-generated method stub
         listDataHeader = new ArrayList<String>();
         listDataChild = new HashMap<>();
 
-        // Adding child data
         listDataHeader.add("Primer");
-        listDataHeader.add("Section I. Admission and Retention");
-        listDataHeader.add("Section II. Academic Rules and Regulations");
-        listDataHeader
-                .add("Section III. Academic Freedom and Student Duties and Responsibilities");
-        listDataHeader.add("Section IV. Student Services");
-        listDataHeader.add("Section V. Student Publication");
-        listDataHeader.add("Section VI. Campus Organizations");
-        listDataHeader.add("Section VII. Code of Discipline");
+        listDataHeader.add("Admission and Retention");
+        listDataHeader.add("Academic Rules and Regulations");
+        listDataHeader.add("Academic Freedom and Student Duties and Responsibilities");
+        listDataHeader.add("Student Services");
+        listDataHeader.add("Student Publication");
+        listDataHeader.add("Campus Organizations");
+        listDataHeader.add("Code of Discipline");
 
-        // Adding child data for Primir
         List<String> primir = new ArrayList<String>();
         primir.add("Brief History");
         primir.add("Vision, Mision, Goal and Objectives");
         primir.add("University Seal");
         primir.add("UCU Programs");
 
-        // Adding child data for Section1
         List<String> s1 = new ArrayList<String>();
         s1.add("A. Admission");
         s1.add("B. Academic Retention");
@@ -530,7 +517,6 @@ public class FragmentHandbook extends Fragment {
         s1.add("E. Classification of Students");
         s1.add("F. Scholarship and Grants for Students");
 
-        // Adding child data for Section2
         List<String> s2 = new ArrayList<String>();
         s2.add("A. School Terms");
         s2.add("B. Class Hours");
@@ -541,12 +527,10 @@ public class FragmentHandbook extends Fragment {
         s2.add("G. School Credentials");
         s2.add("H. Tuition and Miscellaneous Fees");
 
-        // Adding child data for Section3
         List<String> s3 = new ArrayList<String>();
         s3.add("A. Academic Freedom as the Right of an Individual Student");
         s3.add("B. Duties and Responsibilities of Students");
 
-        // Adding child data for Section4
         List<String> s4 = new ArrayList<String>();
         s4.add("A. Office of Student Affairs(OSA)");
         s4.add("B. Guidance Office");
@@ -560,7 +544,7 @@ public class FragmentHandbook extends Fragment {
         s4.add("J. Security Services");
         s4.add("K. Janitotial Services");
         s4.add("L. Canteen");
-        // Adding child data for Sectio5
+
         List<String> s5 = new ArrayList<String>();
         s5.add("I. Definition");
         s5.add("II. Recognition");

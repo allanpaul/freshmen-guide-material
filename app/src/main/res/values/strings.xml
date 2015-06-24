@@ -19,12 +19,7 @@
 
     <string name="btnlabel_procedure">PROCEDURE AND STANDARDS</string>
     <string name="btnlabel_list_org">LIST OF ORGANIZATIONS</string>
-<<<<<<< HEAD
     <string name="title_activity_fragment_campus_map">FragmentCampusMap</string>
-
-    <string name="hello_world">Hello world!</string>
-=======
-
 
         <!-- Primir Starts -->
     <string name="primir">
@@ -1528,15 +1523,6 @@ of and the action asked for.</p>
    ]]>
     </string>
         <string name="title_activity_dummy">dummy</string>
-
-        <string name="hello_world">Hello world!</string>
-        <!-- General Policy End -->
-
-
-
-
-
->>>>>>> f3f5b9e00c21f6975d610dd60812b8c656111ca6
 </resources>
 
 

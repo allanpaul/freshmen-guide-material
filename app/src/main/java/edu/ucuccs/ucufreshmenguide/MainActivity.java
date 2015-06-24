@@ -40,19 +40,16 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
     @Override
     public void onNavigationDrawerItemSelected(int position) {
         Fragment fHymn = new FragmentUCUHymn();
-<<<<<<< HEAD
         Fragment fMap = new FragmentCampusMap();
-=======
-        Fragment handbook= new FragmentHandbook();
->>>>>>> f3f5b9e00c21f6975d610dd60812b8c656111ca6
-        Fragment contactUs = new FragmentContactUs();
-        Fragment studOrg = new FragmentStudentOrg();
+        Fragment fhandbook= new FragmentHandbook();
+        Fragment fcontactUs = new FragmentContactUs();
+        Fragment fstudOrg = new FragmentStudentOrg();
         FragmentTransaction t = getFragmentManager().beginTransaction();
         switch (position) {
             case 0: //search //todo
                 break;
             case 1:
-                t.replace(R.id.container, handbook);
+                t.replace(R.id.container, fhandbook);
                 t.addToBackStack(null);
                 t.commit();
                 break;
@@ -64,7 +61,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
             case 3: //settings //todo
                 break;
             case 5: //stud_org
-                t.replace(R.id.container, studOrg);
+                t.replace(R.id.container, fstudOrg);
                 t.addToBackStack(null);
                 t.commit();
                 break;
@@ -74,7 +71,7 @@ public class MainActivity extends ActionBarActivity implements NavigationDrawerC
                 t.commit();
                 break;
             case 7: //stats
-                t.replace(R.id.container, contactUs);
+                t.replace(R.id.container, fcontactUs);
                 t.addToBackStack(null);
                 t.commit();
                 break;
