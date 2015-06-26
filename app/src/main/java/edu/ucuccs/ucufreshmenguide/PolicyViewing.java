@@ -11,15 +11,6 @@ import android.widget.TextView;
 public class PolicyViewing extends ActionBarActivity {
 	TextView txtPolicy;
     Toolbar mToolbar;
-    private NavigationDrawerCallbacks mNavigationDrawerCallbacks;
-
-    public NavigationDrawerCallbacks getNavigationDrawerCallbacks() {
-        return mNavigationDrawerCallbacks;
-    }
-
-    public void setNavigationDrawerCallbacks(NavigationDrawerCallbacks navigationDrawerCallbacks) {
-        mNavigationDrawerCallbacks = navigationDrawerCallbacks;
-    }
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -242,8 +233,6 @@ public class PolicyViewing extends ActionBarActivity {
 
         if (id == android.R.id.home) {
             onBackPressed();
-            if (mNavigationDrawerCallbacks != null)
-                mNavigationDrawerCallbacks.onNavigationDrawerItemSelected(1);
         }
 
         return super.onOptionsItemSelected(item);
