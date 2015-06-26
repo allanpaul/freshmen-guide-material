@@ -11,6 +11,7 @@ import android.widget.TextView;
 public class PolicyViewing extends ActionBarActivity {
 	TextView txtPolicy;
     Toolbar mToolbar;
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -232,7 +233,7 @@ public class PolicyViewing extends ActionBarActivity {
         int id = item.getItemId();
 
         if (id == android.R.id.home) {
-            onBackPressed();
+			super.onBackPressed();
         }
 
         return super.onOptionsItemSelected(item);
